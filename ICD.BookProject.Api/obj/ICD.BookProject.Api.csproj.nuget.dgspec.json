@@ -1,0 +1,695 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/anita/Desktop/f/a/ICD.BookProject.Api/ICD.BookProject.Api.csproj": {}
+  },
+  "projects": {
+    "/Users/anita/Desktop/f/a/ICD.BookProject.Api/ICD.BookProject.Api.csproj": {
+      "version": "0.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/anita/Desktop/f/a/ICD.BookProject.Api/ICD.BookProject.Api.csproj",
+        "projectName": "ICD.BookProject.Api",
+        "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.Api/ICD.BookProject.Api.csproj",
+        "packagesPath": "/Users/anita/.nuget/packages/",
+        "outputPath": "/Users/anita/Desktop/f/a/ICD.BookProject.Api/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/anita/Desktop/f/a/NuGet.Config",
+          "/Users/anita/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.icdgroup.org:5556/v3/index.json": {},
+          "https://nuget.icdgroup.org:5561/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/anita/Desktop/f/a/ICD.BookProject.BusinessService/ICD.BookProject.BusinessService.csproj": {
+                "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.BusinessService/ICD.BookProject.BusinessService.csproj"
+              },
+              "/Users/anita/Desktop/f/a/ICD.BookProject.BusinessServiceContract/ICD.BookProject.BusinessServiceContract.csproj": {
+                "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.BusinessServiceContract/ICD.BookProject.BusinessServiceContract.csproj"
+              },
+              "/Users/anita/Desktop/f/a/ICD.BookProject.Data/ICD.BookProject.Data.csproj": {
+                "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.Data/ICD.BookProject.Data.csproj"
+              },
+              "/Users/anita/Desktop/f/a/ICD.BookProject.Repository/ICD.BookProject.Repository.csproj": {
+                "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.Repository/ICD.BookProject.Repository.csproj"
+              },
+              "/Users/anita/Desktop/f/a/ICD.BookProject.RepositoryContract/ICD.BookProject.RepositoryContract.csproj": {
+                "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.RepositoryContract/ICD.BookProject.RepositoryContract.csproj"
+              },
+              "/Users/anita/Desktop/f/a/ICD.BookProject/ICD.BookProject.csproj": {
+                "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject/ICD.BookProject.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "ICD.Framework.InversionOfControl.Autofac": {
+              "target": "Package",
+              "version": "[6.4.18, )"
+            },
+            "ICD.Framework.Web": {
+              "target": "Package",
+              "version": "[6.4.18, )"
+            },
+            "ICD.Infrastructure.BusinessService": {
+              "target": "Package",
+              "version": "[6.3.10, )"
+            },
+            "ICD.Infrastructure.Data": {
+              "target": "Package",
+              "version": "[6.3.10, )"
+            },
+            "ICD.Infrastructure.Repository": {
+              "target": "Package",
+              "version": "[6.3.10, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anita/Desktop/f/a/ICD.BookProject.BusinessService/ICD.BookProject.BusinessService.csproj": {
+      "version": "0.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/anita/Desktop/f/a/ICD.BookProject.BusinessService/ICD.BookProject.BusinessService.csproj",
+        "projectName": "ICD.BookProject.BusinessService",
+        "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.BusinessService/ICD.BookProject.BusinessService.csproj",
+        "packagesPath": "/Users/anita/.nuget/packages/",
+        "outputPath": "/Users/anita/Desktop/f/a/ICD.BookProject.BusinessService/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/anita/Desktop/f/a/NuGet.Config",
+          "/Users/anita/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.icdgroup.org:5556/v3/index.json": {},
+          "https://nuget.icdgroup.org:5561/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/anita/Desktop/f/a/ICD.BookProject.BusinessServiceContract/ICD.BookProject.BusinessServiceContract.csproj": {
+                "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.BusinessServiceContract/ICD.BookProject.BusinessServiceContract.csproj"
+              },
+              "/Users/anita/Desktop/f/a/ICD.BookProject.Domain/ICD.BookProject.Domain.csproj": {
+                "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.Domain/ICD.BookProject.Domain.csproj"
+              },
+              "/Users/anita/Desktop/f/a/ICD.BookProject.RepositoryContract/ICD.BookProject.RepositoryContract.csproj": {
+                "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.RepositoryContract/ICD.BookProject.RepositoryContract.csproj"
+              },
+              "/Users/anita/Desktop/f/a/ICD.BookProject/ICD.BookProject.csproj": {
+                "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject/ICD.BookProject.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "ICD.Framework": {
+              "target": "Package",
+              "version": "[6.4.18, )"
+            },
+            "ICD.Framework.Data": {
+              "target": "Package",
+              "version": "[6.4.18, )"
+            },
+            "ICD.Infrastructure.BusinessServiceContract": {
+              "target": "Package",
+              "version": "[6.3.10, )"
+            },
+            "ICD.Infrastructure.Exception": {
+              "target": "Package",
+              "version": "[6.3.10, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anita/Desktop/f/a/ICD.BookProject.BusinessServiceContract/ICD.BookProject.BusinessServiceContract.csproj": {
+      "version": "0.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/anita/Desktop/f/a/ICD.BookProject.BusinessServiceContract/ICD.BookProject.BusinessServiceContract.csproj",
+        "projectName": "ICD.BookProject.BusinessServiceContract",
+        "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.BusinessServiceContract/ICD.BookProject.BusinessServiceContract.csproj",
+        "packagesPath": "/Users/anita/.nuget/packages/",
+        "outputPath": "/Users/anita/Desktop/f/a/ICD.BookProject.BusinessServiceContract/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/anita/Desktop/f/a/NuGet.Config",
+          "/Users/anita/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.icdgroup.org:5556/v3/index.json": {},
+          "https://nuget.icdgroup.org:5561/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/anita/Desktop/f/a/ICD.BookProject/ICD.BookProject.csproj": {
+                "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject/ICD.BookProject.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anita/Desktop/f/a/ICD.BookProject.Data/ICD.BookProject.Data.csproj": {
+      "version": "0.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/anita/Desktop/f/a/ICD.BookProject.Data/ICD.BookProject.Data.csproj",
+        "projectName": "ICD.BookProject.Data",
+        "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.Data/ICD.BookProject.Data.csproj",
+        "packagesPath": "/Users/anita/.nuget/packages/",
+        "outputPath": "/Users/anita/Desktop/f/a/ICD.BookProject.Data/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/anita/Desktop/f/a/NuGet.Config",
+          "/Users/anita/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.icdgroup.org:5556/v3/index.json": {},
+          "https://nuget.icdgroup.org:5561/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/anita/Desktop/f/a/ICD.BookProject.Domain/ICD.BookProject.Domain.csproj": {
+                "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.Domain/ICD.BookProject.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "ICD.Framework": {
+              "target": "Package",
+              "version": "[6.4.18, )"
+            },
+            "ICD.Framework.Data.EF": {
+              "target": "Package",
+              "version": "[6.4.18, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anita/Desktop/f/a/ICD.BookProject.Domain/ICD.BookProject.Domain.csproj": {
+      "version": "0.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/anita/Desktop/f/a/ICD.BookProject.Domain/ICD.BookProject.Domain.csproj",
+        "projectName": "ICD.BookProject.Domain",
+        "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.Domain/ICD.BookProject.Domain.csproj",
+        "packagesPath": "/Users/anita/.nuget/packages/",
+        "outputPath": "/Users/anita/Desktop/f/a/ICD.BookProject.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/anita/Desktop/f/a/NuGet.Config",
+          "/Users/anita/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.icdgroup.org:5556/v3/index.json": {},
+          "https://nuget.icdgroup.org:5561/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "ICD.Framework": {
+              "target": "Package",
+              "version": "[6.4.18, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anita/Desktop/f/a/ICD.BookProject.Repository/ICD.BookProject.Repository.csproj": {
+      "version": "0.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/anita/Desktop/f/a/ICD.BookProject.Repository/ICD.BookProject.Repository.csproj",
+        "projectName": "ICD.BookProject.Repository",
+        "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.Repository/ICD.BookProject.Repository.csproj",
+        "packagesPath": "/Users/anita/.nuget/packages/",
+        "outputPath": "/Users/anita/Desktop/f/a/ICD.BookProject.Repository/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/anita/Desktop/f/a/NuGet.Config",
+          "/Users/anita/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.icdgroup.org:5556/v3/index.json": {},
+          "https://nuget.icdgroup.org:5561/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/anita/Desktop/f/a/ICD.BookProject.Domain/ICD.BookProject.Domain.csproj": {
+                "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.Domain/ICD.BookProject.Domain.csproj"
+              },
+              "/Users/anita/Desktop/f/a/ICD.BookProject.RepositoryContract/ICD.BookProject.RepositoryContract.csproj": {
+                "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.RepositoryContract/ICD.BookProject.RepositoryContract.csproj"
+              },
+              "/Users/anita/Desktop/f/a/ICD.BookProject/ICD.BookProject.csproj": {
+                "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject/ICD.BookProject.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "ICD.Framework": {
+              "target": "Package",
+              "version": "[6.4.18, )"
+            },
+            "ICD.Framework.Data": {
+              "target": "Package",
+              "version": "[6.4.18, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anita/Desktop/f/a/ICD.BookProject.RepositoryContract/ICD.BookProject.RepositoryContract.csproj": {
+      "version": "0.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/anita/Desktop/f/a/ICD.BookProject.RepositoryContract/ICD.BookProject.RepositoryContract.csproj",
+        "projectName": "ICD.BookProject.RepositoryContract",
+        "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.RepositoryContract/ICD.BookProject.RepositoryContract.csproj",
+        "packagesPath": "/Users/anita/.nuget/packages/",
+        "outputPath": "/Users/anita/Desktop/f/a/ICD.BookProject.RepositoryContract/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/anita/Desktop/f/a/NuGet.Config",
+          "/Users/anita/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.icdgroup.org:5556/v3/index.json": {},
+          "https://nuget.icdgroup.org:5561/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/anita/Desktop/f/a/ICD.BookProject.Domain/ICD.BookProject.Domain.csproj": {
+                "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject.Domain/ICD.BookProject.Domain.csproj"
+              },
+              "/Users/anita/Desktop/f/a/ICD.BookProject/ICD.BookProject.csproj": {
+                "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject/ICD.BookProject.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "ICD.Framework": {
+              "target": "Package",
+              "version": "[6.4.18, )"
+            },
+            "ICD.Framework.Data": {
+              "target": "Package",
+              "version": "[6.4.18, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anita/Desktop/f/a/ICD.BookProject/ICD.BookProject.csproj": {
+      "version": "0.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/anita/Desktop/f/a/ICD.BookProject/ICD.BookProject.csproj",
+        "projectName": "ICD.BookProject",
+        "projectPath": "/Users/anita/Desktop/f/a/ICD.BookProject/ICD.BookProject.csproj",
+        "packagesPath": "/Users/anita/.nuget/packages/",
+        "outputPath": "/Users/anita/Desktop/f/a/ICD.BookProject/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/anita/Desktop/f/a/NuGet.Config",
+          "/Users/anita/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.icdgroup.org:5556/v3/index.json": {},
+          "https://nuget.icdgroup.org:5561/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "ICD.Framework": {
+              "target": "Package",
+              "version": "[6.4.18, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

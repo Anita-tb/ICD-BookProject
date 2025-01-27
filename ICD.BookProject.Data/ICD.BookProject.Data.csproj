@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <VersionPrefix>0.0.0</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
+    <Company>MediTechSys</Company>
+    <Authors>Develop Team</Authors>
+    <Owners>MediTechSys</Owners>
+    <PackageIconUrl>http://172.16.100.52:90/template.png</PackageIconUrl>
+    <PackageProjectUrl>http://172.16.100.52/icd/template.git</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+
+    <PackageReference Include="ICD.Framework" Version="6.4.18" />
+    <PackageReference Include="ICD.Framework.Data.EF" Version="6.4.18" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ICD.BookProject.Domain\ICD.BookProject.Domain.csproj" />
+  </ItemGroup>
+</Project>

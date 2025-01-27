@@ -1,0 +1,24 @@
+2025-01-22 13:20:43.329 +03:30 [ERR] Module (), Message : error in LoadObjectiveAppSettings 
+ One or more errors occurred. (nodename nor servname provided, or not known (ts.icdgroup.org:82))    at ICD.Framework.Web.Helpers.ObjectiveConfigHelper.GetObjectiveConfigFromUrl(String systemName, String systemAbbreviation, IHttpService httpService, String url, Int32 timeout)
+   at ICD.Framework.Web.TotalSystemWebStartup.LoadObjectiveAppSettings(IServiceCollection services)
+
+2025-01-22 13:20:43.340 +03:30 [ERR] Module (), Message : Error in ConfigureServices One or more errors occurred. (nodename nor servname provided, or not known (ts.icdgroup.org:82))    at ICD.Framework.Web.Helpers.ObjectiveConfigHelper.GetObjectiveConfigFromUrl(String systemName, String systemAbbreviation, IHttpService httpService, String url, Int32 timeout)
+   at ICD.Framework.Web.TotalSystemWebStartup.LoadObjectiveAppSettings(IServiceCollection services)
+   at ICD.Framework.Web.TotalSystemWebStartup.ConfigureServices(IServiceCollection services)
+
+2025-01-22 13:22:06.468 +03:30 [ERR] Module (), Message : error in LoadObjectiveAppSettings 
+ One or more errors occurred. (nodename nor servname provided, or not known (ts.icdgroup.org:82))    at ICD.Framework.Web.Helpers.ObjectiveConfigHelper.GetObjectiveConfigFromUrl(String systemName, String systemAbbreviation, IHttpService httpService, String url, Int32 timeout)
+   at ICD.Framework.Web.TotalSystemWebStartup.LoadObjectiveAppSettings(IServiceCollection services)
+
+2025-01-22 13:22:06.480 +03:30 [ERR] Module (), Message : Error in ConfigureServices One or more errors occurred. (nodename nor servname provided, or not known (ts.icdgroup.org:82))    at ICD.Framework.Web.Helpers.ObjectiveConfigHelper.GetObjectiveConfigFromUrl(String systemName, String systemAbbreviation, IHttpService httpService, String url, Int32 timeout)
+   at ICD.Framework.Web.TotalSystemWebStartup.LoadObjectiveAppSettings(IServiceCollection services)
+   at ICD.Framework.Web.TotalSystemWebStartup.ConfigureServices(IServiceCollection services)
+
+2025-01-22 13:22:43.161 +03:30 [ERR] Module (), Message : error in LoadObjectiveAppSettings 
+ One or more errors occurred. (nodename nor servname provided, or not known (ts.icdgroup.org:82))    at ICD.Framework.Web.Helpers.ObjectiveConfigHelper.GetObjectiveConfigFromUrl(String systemName, String systemAbbreviation, IHttpService httpService, String url, Int32 timeout)
+   at ICD.Framework.Web.TotalSystemWebStartup.LoadObjectiveAppSettings(IServiceCollection services)
+
+2025-01-22 13:22:43.173 +03:30 [ERR] Module (), Message : Error in ConfigureServices One or more errors occurred. (nodename nor servname provided, or not known (ts.icdgroup.org:82))    at ICD.Framework.Web.Helpers.ObjectiveConfigHelper.GetObjectiveConfigFromUrl(String systemName, String systemAbbreviation, IHttpService httpService, String url, Int32 timeout)
+   at ICD.Framework.Web.TotalSystemWebStartup.LoadObjectiveAppSettings(IServiceCollection services)
+   at ICD.Framework.Web.TotalSystemWebStartup.ConfigureServices(IServiceCollection services)
+

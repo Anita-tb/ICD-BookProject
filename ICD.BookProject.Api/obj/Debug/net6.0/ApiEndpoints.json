@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "ICD.Framework.Web.WorkFlow.ApiExplorerController",
+    "Method": "ActionsListAsync",
+    "RelativePath": "api/ApiExplorer/ActionsList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ICD.BookProject.Api.Controllers.BookController",
+    "Method": "InsertBookAsync",
+    "RelativePath": "api/Books/InsertBook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ICD.BookProject.InsertBookRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ICD.Framework.Web.WorkFlow.WfController",
+    "Method": "UpdateWorkflowStatus",
+    "RelativePath": "api/Wf/UpdateWorkflowStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ICD.Framework.WorkFlow.WFUpdateStatusDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
