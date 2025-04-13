@@ -28,3 +28,4 @@ C:/Users/hossein.firoozi/Desktop/a/ICD.BookProject.BusinessServiceContract/obj/D
 /Users/anita/Desktop/f/a/ICD.BookProject.BusinessServiceContract/obj/Debug/net6.0/refint/ICD.BookProject.BusinessServiceContract.dll
 /Users/anita/Desktop/f/a/ICD.BookProject.BusinessServiceContract/obj/Debug/net6.0/ICD.BookProject.BusinessServiceContract.pdb
 /Users/anita/Desktop/f/a/ICD.BookProject.BusinessServiceContract/obj/Debug/net6.0/ref/ICD.BookProject.BusinessServiceContract.dll
+/Users/anita/Desktop/f/a/ICD.BookProject.BusinessServiceContract/obj/Debug/net6.0/ICD.BookProject.BusinessServiceContract.sourcelink.json

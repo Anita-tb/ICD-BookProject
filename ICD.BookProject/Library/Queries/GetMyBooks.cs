@@ -15,6 +15,7 @@ public class GetMyBooksResult : ListQueryResult<GetMyBooksModel>{}
 public class GetMyBooksModel
 {
     public int  Key { get; set; }
+    public int BookRef{ get; set; }
     public string Title { get; set; }
     public string CategoryName { get; set; }
     public int Page { get; set; }

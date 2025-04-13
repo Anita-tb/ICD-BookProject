@@ -45,6 +45,7 @@ namespace ICD.BookProject.Repository
                     CategoryName = c.Name,
                     Page = b.Page,
                     AuthorName = a.Name,
+                    AuthorRef = a.Key,
                     /*AuthorNames = new List<string>
                     {
                         ab.Author.AuthorName

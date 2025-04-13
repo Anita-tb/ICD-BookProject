@@ -28,3 +28,4 @@ C:/Users/hossein.firoozi/Desktop/a/ICD.BookProject.Data/obj/Debug/net6.0/ref/ICD
 /Users/anita/Desktop/f/a/ICD.BookProject.Data/obj/Debug/net6.0/refint/ICD.BookProject.Data.dll
 /Users/anita/Desktop/f/a/ICD.BookProject.Data/obj/Debug/net6.0/ICD.BookProject.Data.pdb
 /Users/anita/Desktop/f/a/ICD.BookProject.Data/obj/Debug/net6.0/ref/ICD.BookProject.Data.dll
+/Users/anita/Desktop/f/a/ICD.BookProject.Data/obj/Debug/net6.0/ICD.BookProject.Data.sourcelink.json

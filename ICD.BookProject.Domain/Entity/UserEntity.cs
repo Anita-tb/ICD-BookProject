@@ -10,5 +10,7 @@ public class UserEntity : BaseEntity<long>
 
     #region Navigation Property
     public ICollection<LibraryEntity> BookLibraries { get; set; }
+    public ICollection<ResponseEntity> Responses { get; set; }
+    
     #endregion
 }

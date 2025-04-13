@@ -41,32 +41,22 @@ namespace ICD.BookProject.BusinessService
         public async Task<BaseBookResult> InsertBookAsync(InsertBookRequest request)
         {
             var bookEntity = request.MapTo<BookEntity>();
-            /*var userKey = _appSession.UserRef;
-            bookEntity.UsersBook = new List<UserBookEntity>
-            {
-                new UserBookEntity
-                {
-                    //BookRef = bookEntity.Key,
-                    UserRef = _appSession.UserRef
-                }
-            };*/
-            if (request.AuthorIds.IsNotNull() && request.AuthorIds.Any()) 
+            
+            bookEntity.AuthorsBook = new List<AuthorBookEntity>();
+
+            if (request.AuthorIds.IsNotNull() && request.AuthorIds.Any())
             {
                 foreach (var authorId in request.AuthorIds)
                 {
-                    bookEntity.AuthorsBook = new List<AuthorBookEntity>
+                    bookEntity.AuthorsBook.Add(new AuthorBookEntity
                     {
-                        new AuthorBookEntity
-                        {
-                            AuthorRef = authorId.Value
-                        }
-                    };
+                        AuthorRef = authorId.Value
+                    });
                 }
-                
             }
 
-            
             await _bookRepository.AddAsync(bookEntity);
+            
             try
             {
                 await _db.SaveChangesAsync();
@@ -155,6 +145,7 @@ namespace ICD.BookProject.BusinessService
                             .Entities 
                             .Select(x => x.AuthorName)
                             .ToList();
+                        newModel.AuthorRefs = allBooksWithSameKey.Entities.Select(x=>x.AuthorRef.Value).Distinct().ToList();
 
                         finalResult.Entities.Add(newModel);
                     }
@@ -169,11 +160,17 @@ namespace ICD.BookProject.BusinessService
                     {
                         if(finalResult.Entities.Where(x=>x.Key == book.Key).Any())
                             continue;
-                       
                         var books = result.Entities.Where(x => x.Key == book.Key);
                         var newModel = book.MapTo<GetBooksModel>();
-                        var authorNames = books.Select(x => x.AuthorName).ToList();
-                        newModel.AuthorNames = authorNames;
+                        if (book.AuthorName != null && book.AuthorName != string.Empty)
+                        {
+                            var authorNames = books.Select(x => x.AuthorName).ToList();
+                            var authorRefs = books.Select(x => x.AuthorRef.Value).ToList();
+                            newModel.AuthorNames = authorNames;
+                            newModel.AuthorRefs = authorRefs;
+                        }
+                        
+                        
  
                         finalResult.Entities.Add(newModel);
                     }
@@ -182,7 +179,9 @@ namespace ICD.BookProject.BusinessService
             
             return finalResult;
         }
-        
+
+   
+
         public async Task<DeleteTypeIntResult> DeleteBookAsync(DeleteTypeIntRequest request)
         {
             await _bookRepository.DeleteWithAsync(x=>x.Key == request.Key);
@@ -266,6 +265,30 @@ namespace ICD.BookProject.BusinessService
             
             return new AppendCategoryResult {Success = true};
             
+        }
+
+        public async Task<GetByKeyBooksResult> GetByKeyBooksAsync(GetByKeyBooksQuery query)
+        {
+            var finalResult = new GetByKeyBooksResult
+            {
+                Entity = new GetByKeyBooksModel()
+            };
+            var queryDataSource = query.ToQueryDataSource<BookView>();
+         
+          
+            
+            queryDataSource.AddFilter(new ExpressionFilterInfo<BookView>(x => x.Key == query.Key));
+           
+            
+            var result = await _bookRepository.GetBooksAsync(queryDataSource);
+            
+            if (result.HasAnyEntity())
+            {
+                    finalResult.Entity = result.Entities.First().MapTo<GetByKeyBooksModel>();
+            } 
+            
+         
+            return finalResult;
         }
     }
 }

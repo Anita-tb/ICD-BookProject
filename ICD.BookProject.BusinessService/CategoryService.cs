@@ -85,6 +85,7 @@ public class CategoryService : ICategoryService
 
     public async Task<DeleteTypeIntResult> DeleteCategoryAsync(DeleteTypeIntRequest request)
     {
+        
         await _categoryRepository.DeleteWithAsync(x=>x.Key == request.Key);
 
         try
@@ -94,7 +95,8 @@ public class CategoryService : ICategoryService
         catch (Exception e)
         {
 
-            throw;
+            throw;         throw new Exception("Delete Category Failed", e);
+
         }
 
         return new DeleteTypeIntResult { Success = true };

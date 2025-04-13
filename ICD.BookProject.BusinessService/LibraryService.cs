@@ -86,7 +86,7 @@ public class LibraryService : ILibraryService
             var queryDataSource = query.ToQueryDataSource<MyBookView>();
 
             
-            queryDataSource.AddFilter(new ExpressionFilterInfo<MyBookView>(x => x.UserRef == _appSession.UserRef));
+            queryDataSource.AddFilter(new ExpressionFilterInfo<MyBookView>(x => x.UserRef == 4));
             if (query.Key.HasValue)
                 queryDataSource.AddFilter(new ExpressionFilterInfo<MyBookView>(x => x.Key == query.Key.Value));
             if(!string.IsNullOrEmpty(query.CategoryName))
@@ -101,11 +101,11 @@ public class LibraryService : ILibraryService
                 {
                     foreach (var book in result.Entities)
                     {
-                        if (finalResult.Entities.Any(x => x.Key == book.Key))
+                        if (finalResult.Entities.Any(x => x.BookRef == book.BookRef))
                             continue;
 
                         var queryForBooksWithSameKey = new QueryDataSource<MyBookView>();
-                        queryForBooksWithSameKey.AddFilter(new ExpressionFilterInfo<MyBookView>(x => x.Key == book.Key));
+                        queryForBooksWithSameKey.AddFilter(new ExpressionFilterInfo<MyBookView>(x => x.BookRef == book.BookRef));
 
                         var allBooksWithSameKey = await _libraryRepository.GetMyBooksAsync(queryForBooksWithSameKey);
 
@@ -126,10 +126,10 @@ public class LibraryService : ILibraryService
                 {
                     foreach (var book in result.Entities)
                     {
-                        if(finalResult.Entities.Where(x=>x.Key == book.Key).Any())
+                        if(finalResult.Entities.Where(x=>x.BookRef == book.BookRef).Any())
                             continue;
                        
-                        var books = result.Entities.Where(x => x.Key == book.Key);
+                        var books = result.Entities.Where(x => x.BookRef == book.BookRef);
                         var newModel = book.MapTo<GetMyBooksModel>();
                         var authorNames = books.Select(x => x.AuthorName).ToList();
                         newModel.AuthorNames = authorNames;

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MediTechSys")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.0+8d314c2e2dcec7772672ef9d1ea9ce66e5012ace")]
 [assembly: System.Reflection.AssemblyProductAttribute("ICD.BookProject.BusinessServiceContract")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ICD.BookProject.BusinessServiceContract")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.0.0.0")]

@@ -37,6 +37,7 @@ public class LibraryRepository : BaseRepository<LibraryEntity,int> , ILibraryRep
                 AuthorName = a.Name,
                 CurrentPage = l.CurrentPage,
                 UserRef = l.UserRef,
+                BookRef = l.BookRef,
                 Progress = b.Page > 0 ? $"{((double)l.CurrentPage / b.Page * 100):F2}%" : "0%"
 
                 /*AuthorNames = new List<string>

@@ -22,5 +22,6 @@ public class GetBooksModel
     public int? CategoryRef { get; set; }
     public int Page { get; set; }
     //public int? CurrentPage { get; set; }
-    public List<string> AuthorNames { get; set; }
+    public List<string> AuthorNames { get; set; } = new List<string>();
+    public List<int> AuthorRefs { get; set; } = new List<int>();
 }

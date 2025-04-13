@@ -18,7 +18,7 @@ public class UserController : BaseController
     }
 
     [HttpPost("insert")]
-    //[AllowAnonymous]
+    [AllowAnonymous]
     public async Task<IActionResult> InsertUserAsync([FromBody] InsertUserRequest request)
     {
         var result = await _userService.InsertUserAsync(request);
@@ -51,7 +51,7 @@ public class UserController : BaseController
     }
     
     [HttpPost("get")]
-    //[AllowAnonymous]
+    [AllowAnonymous]
     public async Task<IActionResult> GetUsersAsync([FromBody] GetUsersQuery query)
     {
         var result = await _userService.GetUsersAsync(query);

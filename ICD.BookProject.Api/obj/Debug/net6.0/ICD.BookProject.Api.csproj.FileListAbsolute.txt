@@ -478,3 +478,4 @@ C:/Users/hossein.firoozi/Desktop/a/ICD.BookProject.Api/obj/Debug/net6.0/ref/ICD.
 /Users/anita/Desktop/f/a/ICD.BookProject.Api/obj/Debug/net6.0/ICD.BookProject.Api.pdb
 /Users/anita/Desktop/f/a/ICD.BookProject.Api/obj/Debug/net6.0/ICD.BookProject.Api.genruntimeconfig.cache
 /Users/anita/Desktop/f/a/ICD.BookProject.Api/obj/Debug/net6.0/ref/ICD.BookProject.Api.dll
+/Users/anita/Desktop/f/a/ICD.BookProject.Api/obj/Debug/net6.0/ICD.BookProject.Api.sourcelink.json

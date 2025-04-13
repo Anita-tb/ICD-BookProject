@@ -12,6 +12,7 @@ namespace ICD.BookProject.BusinessServiceContract
         Task<BaseBookResult> InsertBookAsync(InsertBookRequest request);
         Task<BaseBookResult> UpdateBookAsync(UpdateBookRequest request);
         Task<GetBooksResult> GetBooksAsync(GetBooksQuery query);
+        Task<GetByKeyBooksResult> GetByKeyBooksAsync(GetByKeyBooksQuery query);
         Task<DeleteTypeIntResult> DeleteBookAsync(DeleteTypeIntRequest request);
         Task<AppendAuthorResult> AppendAuthorAsync(AppendAuthorRequest request);
         Task<AppendCategoryResult> AppendCategoryAsync(AppendCategoryRequest request);

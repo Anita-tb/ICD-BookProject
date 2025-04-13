@@ -36,3 +36,4 @@ C:/Users/hossein.firoozi/Desktop/a/ICD.BookProject.Repository/obj/Debug/net6.0/r
 /Users/anita/Desktop/f/a/ICD.BookProject.Repository/obj/Debug/net6.0/refint/ICD.BookProject.Repository.dll
 /Users/anita/Desktop/f/a/ICD.BookProject.Repository/obj/Debug/net6.0/ICD.BookProject.Repository.pdb
 /Users/anita/Desktop/f/a/ICD.BookProject.Repository/obj/Debug/net6.0/ref/ICD.BookProject.Repository.dll
+/Users/anita/Desktop/f/a/ICD.BookProject.Repository/obj/Debug/net6.0/ICD.BookProject.Repository.sourcelink.json

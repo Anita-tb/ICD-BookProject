@@ -49,10 +49,19 @@ public class BookController : BaseController
     
     
     [HttpPost("get")]
-    //[AllowAnonymous]
+    [AllowAnonymous]
     public async Task<IActionResult> GetBooksAsync([FromBody] GetBooksQuery query)
     {
         var result = await _bookService.GetBooksAsync(query);
+
+        return Ok(result);
+    }
+    
+    [HttpPost("get-by-key")]
+    [AllowAnonymous]
+    public async Task<IActionResult> GetByKeyBooksAsync([FromBody] GetByKeyBooksQuery query)
+    {
+        var result = await _bookService.GetByKeyBooksAsync(query);
 
         return Ok(result);
     }

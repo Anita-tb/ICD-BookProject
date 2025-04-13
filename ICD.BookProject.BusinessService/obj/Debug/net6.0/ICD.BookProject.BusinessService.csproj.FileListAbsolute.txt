@@ -40,3 +40,4 @@ C:/Users/hossein.firoozi/Desktop/a/ICD.BookProject.BusinessService/obj/Debug/net
 /Users/anita/Desktop/f/a/ICD.BookProject.BusinessService/obj/Debug/net6.0/refint/ICD.BookProject.BusinessService.dll
 /Users/anita/Desktop/f/a/ICD.BookProject.BusinessService/obj/Debug/net6.0/ICD.BookProject.BusinessService.pdb
 /Users/anita/Desktop/f/a/ICD.BookProject.BusinessService/obj/Debug/net6.0/ref/ICD.BookProject.BusinessService.dll
+/Users/anita/Desktop/f/a/ICD.BookProject.BusinessService/obj/Debug/net6.0/ICD.BookProject.BusinessService.sourcelink.json
